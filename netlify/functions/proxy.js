@@ -1,4 +1,4 @@
-const rateLimit = 20;
+const rateLimit = 5000;
 const rateLimitDuration = 5 * 60 * 1000; // 5 minutes
 const requestCounts = new Map();
 
