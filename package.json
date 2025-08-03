@@ -1,0 +1,8 @@
+{
+  "name": "cors.lol",
+  "version": "1.0.0",
+  "description": "CORS proxy on Netlify",
+  "scripts": {
+    "test": "node --check netlify/functions/proxy.js"
+  }
+}

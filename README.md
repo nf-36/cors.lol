@@ -6,23 +6,20 @@
 
 **cors.lol** is a free-to-use CORS proxy that adds CORS headers to your requests. This service allows you to bypass the Same-Origin Policy and make requests to external APIs without facing CORS issues.
 
+This repository is configured for deployment on [Netlify](https://www.netlify.com/). The proxy is implemented as a serverless function in `netlify/functions/proxy.js`, and `netlify.toml` routes all requests to this function so it can be accessed from the site root.
+
 [![Visit cors.lol](https://img.shields.io/badge/Visit-cors.lol-brightgreen)](https://cors.lol)
 
 ## How to Use
 
-Simply prepend your desired URL with `https://api.cors.lol/?url=`. 
-
+Simply prepend your desired URL with `https://api.cors.lol/?url=`.
 
 ### Example
 
 If you want to proxy a request to `https://example.com/api/data`, you would use the following URL:
 
-
-
 ````
-
 https://api.cors.lol/?url=https://example.com/api/data
-
 ````
 
 ## Features
@@ -44,7 +41,6 @@ We welcome contributions! Please open an issue or submit a pull request with you
 ## Sponsors
 
 [![Cloudblast.io - Cloud VM Hosting](https://cloudblast.io/img/logo-icon.193cf13e.svg)](https://cloudblast.io)
-
 
 ## License
 
